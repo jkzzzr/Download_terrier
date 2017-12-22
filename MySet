@@ -1,6 +1,6 @@
 # 自己添加的一些设置
 
-## 配置etc文件夹位置，（配置文件位置）org.terrier.utility.ApplicationSetup.bootstrapInitialisation()中，设置terrier_home参数
+##配置etc文件夹位置，（配置文件位置）org.terrier.utility.ApplicationSetup.bootstrapInitialisation()中，设置terrier_home参数
 ## 修改索引位置：org.terrier.structures.Index.createIndex()中，设置ApplicationSetup.TERRIER_INDEX_PATH为索引位置即可。
 ## 修改索引模式：意思是，不用去停用词和取词根这些操作，因为吧，比方说word2vec这样的，它训练完的数据，是没有去词根的，所以有这么一个修改，
       停用词：org.terrier.terms.Stopwords.processTerm(String)
